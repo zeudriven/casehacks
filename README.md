@@ -45,6 +45,7 @@ The barrier isn't knowledge or money. It's friction. Traditional bank onboarding
 - Free monthly streak freeze
 
 ### Rewards System
+
 | Reward | XP Cost | Cost to Scotia |
 |---|---|---|
 | XP double weekend | 150 XP | $0 |
@@ -76,6 +77,8 @@ All rewards tied to Scotia's real partner ecosystem — Scene+, Cineplex, Sobeys
 ---
 
 ## Project Structure
+
+```
 scotia-backend/
 ├── main.py              # FastAPI app, CORS, router mounts
 ├── database.py          # SQLAlchemy engine, Base, get_db
@@ -83,11 +86,12 @@ scotia-backend/
 ├── schemas.py           # Pydantic DTOs
 ├── seed.py              # Demo data seeder
 └── routers/
-├── onboard.py       # POST /goal, POST /deposit, GET /kyc-status
-├── xp.py            # GET /xp/{userId}, POST /event
-├── roundups.py      # POST /process, GET /{userId}
-├── rewards.py       # GET /{userId}, POST /{id}/redeem
-└── habits.py        # GET /today/{userId}, POST /{id}/complete/{userId}
+    ├── onboard.py       # POST /goal, POST /deposit, GET /kyc-status
+    ├── xp.py            # GET /xp/{userId}, POST /event
+    ├── roundups.py      # POST /process, GET /{userId}
+    ├── rewards.py       # GET /{userId}, POST /{id}/redeem
+    └── habits.py        # GET /today/{userId}, POST /{id}/complete/{userId}
+
 scotia-frontend/
 ├── src/
 │   ├── App.jsx
@@ -105,6 +109,7 @@ scotia-frontend/
 │       ├── HabitsTab.jsx
 │       └── RoundupsTab.jsx
 └── vite.config.js
+```
 
 ---
 
