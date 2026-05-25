@@ -19,7 +19,7 @@ The barrier isn't knowledge or money. It's friction. Traditional bank onboarding
 
 1. User taps one goal (home deposit, travel, retirement, emergency fund)
 2. Instantly receives a curated beginner portfolio — no forms, no fund codes
-3. Starts with as little as $25
+3. Starts with as little as $1
 4. Identity verification runs in the background (progressive KYC)
 
 ---
@@ -63,7 +63,7 @@ All rewards tied to Scotia's real partner ecosystem — Scene+, Cineplex, Sobeys
 - React + Vite
 - AppContext for shared XP and user state
 - Inline styles — no CSS framework overhead
-- Deployed on Vercel
+- Deployed on Render
 
 ### Backend
 - FastAPI + Python 3.13
@@ -113,7 +113,7 @@ scotia-frontend/
 ### Backend
 
 ```bash
-cd scotia-backend
+cd Backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -125,7 +125,7 @@ API docs available at `http://localhost:8000/docs`
 ### Frontend
 
 ```bash
-cd scotia-frontend
+cd Frontend
 npm install
 npm run dev
 ```
@@ -167,17 +167,3 @@ App runs at `http://localhost:5173`
 | Reward redemption | −XP cost |
 
 Level = total XP ÷ 100
-
----
-
-## Team
-
-Built in 24 hours at CaseHacks 2026.
-
-Malika · Mamin · Dev · Varun
-
----
-
-## Pitch
-
-> *"Scotia FutureFlex turns Scotiabank's 3 million underserved account holders into first-time investors before they close the app."*
